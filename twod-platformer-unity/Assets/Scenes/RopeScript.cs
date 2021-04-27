@@ -46,7 +46,7 @@ public class RopeScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        Debug.Log(distance);
+        //Debug.Log(distance);
 		transform.position = Vector2.MoveTowards (transform.position,destiny,speed);
 
 

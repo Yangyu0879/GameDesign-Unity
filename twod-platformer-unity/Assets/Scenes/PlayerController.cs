@@ -13,13 +13,34 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D myFeet;
     private bool isGround;
     private bool canDoubleJump;
+    public float forcetoAdd = 100;
+    private Rigidbody2D rb;
+    private Collider2D coll;
+    private Animator anim;
 
+    public float speed, jumpForce;
+    private float horizontalMove;
+    public Transform groundCheck;
+    public LayerMask ground;
+    [Header("Dash参数")]
+    public Vector2 dashVector; 
+    public float dashtime;//dash
+    private float dashtimeleft;
+    private float lastDash;
+    public float dashspeed;
+    public float dashCoolDown;
+
+    public bool isDashing;
+
+    bool jumpPressed;
+    int jumpCount;
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         myFeet = GetComponent<BoxCollider2D>();
+
     }
 
     // Update is called once per frame
@@ -27,10 +48,23 @@ public class PlayerController : MonoBehaviour
     {
         Flip();
         Run();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            ReadyTodash();
+        }
+        if (isDashing)
+        {
+            isDashing = false;
+            return;
+        }
+        Dash();
         Jump();
         //Attack();
         CheckGrounded();
         SwitchAnimation();
+        //Dash();
+
+
     }
 
     void CheckGrounded()
@@ -125,6 +159,37 @@ public class PlayerController : MonoBehaviour
         {
             myAnim.SetBool("DoubleFall", false);
             myAnim.SetBool("Idle", true);
+        }
+    }
+
+    void ReadyTodash()
+    {
+        //Debug.Log("dfighoirej");
+        dashVector = new Vector2(dashspeed * myRigidbody.velocity.x,  myRigidbody.velocity.y);
+        isDashing = true;
+        dashtimeleft = dashtime;
+        lastDash = Time.time;
+
+    }
+    void Dash()
+    {
+        //isDashing = true;
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    Debug.Log("ddknhfhrejf");
+            //dashtimeleft -= Time.deltaTime;
+            //ShadowPool.instance.GetFormPool();
+            if (dashtimeleft > 0)
+            {
+                myRigidbody.velocity = dashVector;
+                dashtimeleft -=Time.deltaTime;
+                ShadowPool.instance.GetFormPool();
+            }
+
+        //}
+        if (dashtimeleft <= 0)
+        {
+            isDashing = false;
         }
     }
 }

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142345513454428354}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5309db8d624a79b47a91a95ed2db18f9, type: 3}
   m_Name: 
@@ -188,6 +188,17 @@ MonoBehaviour:
   runSpeed: 5
   jumpSpeed: 6
   doulbJumpSpeed: 5
+  forcetoAdd: 100
+  speed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
+  dashtime: 0.05
+  dashspeed: 4
+  dashCoolDown: 0.1
+  isDashing: 0
 --- !u!114 &1142345513454428362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +213,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hook: {fileID: 744279764685370311, guid: 584617d04a83eee4f96a5b6e1c8aeb80, type: 3}
   ropeActive: 0
+  grappleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  boostForce: 10000
 --- !u!114 &1142345513454428363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,12 +224,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142345513454428354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 092ad07e3bd88e1449e0ab780e75f922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forcetoAdd: 100
+  speed: 0
+  jumpForce: 0
+  groundCheck: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
+  dashtime: 0
+  dashspeed: 0
+  dashCoolDown: 1
+  isGround: 0
+  isJump: 0
+  isDashing: 0
 --- !u!1 &1142345513786826995
 GameObject:
   m_ObjectHideFlags: 0
