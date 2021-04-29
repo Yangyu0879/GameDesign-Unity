@@ -16,7 +16,8 @@
 
 1.增加了玩家的生命-伤害系统和敌人的生命-伤害系统
 （1）调用PlayerHealth的DamagePlayer(damage)函数就可以伤害玩家，
-这一点在Enemy基类中已经写好，负责写“陷阱伤害”部分的人注意就好
+在Enemy基类中已经写好了“敌人碰到玩家就会给予伤害的”功能，
+如果后续还要增加“敌人攻击玩家给与伤害”，“陷阱伤害”部分，就需要调用函数
 还可以调用RecoverPlayer(recovery)来回复玩家
 （2）调用Enemy基类的TakeDamage(damageTaken)就可以伤害敌人，
 这一点在Player类中已经写好
