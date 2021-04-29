@@ -4,26 +4,64 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    public int health;
+    public int hp;
     public int damage;
+    //flash when damaged
+    public float flashTime = 0.2f;
+
+    private SpriteRenderer rendr;
+    private Color originalColor;
+    private PlayerHealth playerHealth;
 
     // Start is called before the first frame update
-    public void Start()
+    protected void Start()
     {
-
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        rendr = GetComponent<SpriteRenderer>();
+        originalColor = rendr.color;
+        //init
     }
 
     // Update is called once per frame
-    public void Update()
+    protected void Update()
     {
-        if (health <= 0)
+        //CheckDeath
+        if (hp <= 0)
         {
             Destroy(gameObject);
         }
     }
 
-    public void TakeDamage(int damage)
+    //be damaged
+    public void TakeDamage(int damageTaken)
     {
-        health -= damage;
+        hp -= damageTaken;
+        FlashColor();
+    }
+
+    //flash
+    void FlashColor()
+    {
+        rendr.color = Color.red;
+        Invoke("ResetColor", flashTime);
+    }
+
+    //reset
+    void ResetColor()
+    {
+        rendr.color = originalColor;
+    }
+
+    //Touch player and give damage
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D"
+           && collision.CompareTag("Player"))
+        {
+            if (playerHealth != null)
+            {
+                playerHealth.DamagePlayer(damage);
+            }
+        }
     }
 }

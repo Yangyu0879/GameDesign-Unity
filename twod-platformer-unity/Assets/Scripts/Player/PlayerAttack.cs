@@ -9,13 +9,13 @@ public class PlayerAttack : MonoBehaviour
     public float time;
 
     private Animator anim;
-    private PolygonCollider2D collider2D;
+    private PolygonCollider2D collid2D;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        collider2D = GetComponent<PolygonCollider2D>();
+        collid2D = GetComponent<PolygonCollider2D>();
     }
 
     // Update is called once per frame
@@ -36,14 +36,14 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator StartAttack()
     {
         yield return new WaitForSeconds(startTime);
-        collider2D.enabled = true;
+        collid2D.enabled = true;
         StartCoroutine(disableHitBox());
     }
 
     IEnumerator disableHitBox()
     {
         yield return new WaitForSeconds(time);
-        collider2D.enabled = false;
+        collid2D.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
