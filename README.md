@@ -23,6 +23,28 @@
 这一点在Player类中已经写好
 （3）增加了玩家受伤、死亡动画，注意死亡后的处理部分还没有完成
 
+附调用方法：
+（1）玩家Player受到伤害或回复
+playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D"&& collision.CompareTag("Player"))
+        {
+            if (playerHealth != null)
+            {
+                playerHealth.DamagePlayer(damage);
+            }
+        }
+    }
+（2）敌人Enemy受到伤害
+void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            other.GetComponent<Enemy>().TakeDamage(damage);
+        }
+    }
+
 2.增加了血条UI
 
 3.为了实验，完善了一个最简单的蝙蝠UI，并且已经放入prefab作为模板，
