@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
     void ReadyTodash()
     {
         //Debug.Log("dfighoirej");
-        dashVector = new Vector2(dashspeed * myRigidbody.velocity.x,  myRigidbody.velocity.y);
+        dashVector = new Vector2(dashspeed * myRigidbody.velocity.x, dashspeed * myRigidbody.velocity.y);
         isDashing = true;
         dashtimeleft = dashtime;
         lastDash = Time.time;
