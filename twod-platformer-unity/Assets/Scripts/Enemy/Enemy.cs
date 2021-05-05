@@ -8,6 +8,7 @@ public abstract class Enemy : MonoBehaviour
     public int damage;
     //flash when damaged
     public float flashTime = 0.2f;
+    public int enemyScore;
 
     private SpriteRenderer rendr;
     private Color originalColor;
@@ -28,6 +29,7 @@ public abstract class Enemy : MonoBehaviour
         //CheckDeath
         if (hp <= 0)
         {
+            ScoreBoard.AddScore(enemyScore);
             Destroy(gameObject);
         }
     }

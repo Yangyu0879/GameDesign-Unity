@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.4f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\PlayerDeathMenu.cs" />
     <Compile Include="Assets\Scripts\RopeHook\RopeScript.cs" />
     <Compile Include="Assets\Scripts\ShadowSprite.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
@@ -67,7 +68,8 @@
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\UI\PlayerDeathMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreBoard.cs" />
+    <Compile Include="Assets\Scripts\Item\CoinItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

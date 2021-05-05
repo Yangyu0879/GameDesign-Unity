@@ -19,7 +19,8 @@ public class PlayerDeathMenu : MonoBehaviour
 
     public void RestartGame()
     {
-
+        PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
+        playerHealth.PlayerRestart();
     }
     public void MainMenu()
     {

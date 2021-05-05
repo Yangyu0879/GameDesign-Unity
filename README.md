@@ -21,6 +21,12 @@
 
 4.PlayerScript脚本中有一些问题，注意修复，同时鼠标左键的功能也需要修复。
 可能需要对主要是钩锁的操控方式进行一次修改重构。
+最好将PlayerScript和PlayerController脚本合并，如果有一些独立功能再单独分出来。
+
+5.添加了碰撞层Layers和显示层Sorting Layers
+
+6.新增了分数系统，如果某种行为会给玩家加分，那么调用ScoreBoard.AddScore(score)即可
+击倒敌人和捡拾金币加分已完成。注意为每种敌人设置分数。
 
 # 5.4 更新
 
