@@ -53,28 +53,40 @@
     <UnityVersion>2020.3.4f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\MainMenu\SelectLevelsMenu.cs" />
     <Compile Include="Assets\Scripts\UI\GameScene\PlayerDeathMenu.cs" />
     <Compile Include="Assets\Scripts\RopeHook\RopeScript.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Scripts\ShadowSprite.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerScript.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\UI\GameScene\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\ScoreBoardMenu.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBat.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Player\RippleEffect\RippleEffect.cs" />
     <Compile Include="Assets\Scripts\ShadowPool.cs" />
     <Compile Include="Assets\Scripts\UI\GameScene\ScoreBoard.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\RopeHook\throwhook.cs" />
     <Compile Include="Assets\Scripts\UI\GameScene\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Item\CoinItem.cs" />
-    <Compile Include="Assets\Scripts\UI\MainMenu\SelectLevelsMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\MainMenu\SettingsMenu.cs" />
-    <Compile Include="Assets\Scripts\UI\MainMenu\ScoreBoardMenu.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\DOTween\DOTween.XML" />
+     <None Include="Assets\Scripts\Player\RippleEffect\RippleEffect.shader" />
+     <None Include="Assets\DOTween\DOTween.dll" />
+     <None Include="Assets\DOTween\readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Program Files\Unity\Editor\2020.3.4\Unity\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -296,6 +308,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>F:\Program Files\Unity\Editor\2020.3.4\Unity\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>F:\Program Files\Unity\Editor\2020.3.4\Unity\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
