@@ -4,17 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Background
-  - UI
-  - Collectibles
-  - Hazards
-  - Grappling Hook
   - Enemy
-  - Can Interact
   - Ungrappable
   - Ground
-  - Can Fall
-  - Bat
+  - Grappling Hook
   layers:
   - Default
   - TransparentFX
@@ -24,12 +17,12 @@ TagManager:
   - UI
   - 
   - 
-  - Background
+  - Ground
   - Player
-  - Grappling Hook
-  - Collectibles
-  - Animals
-  - Obstacle
+  - Enemy
+  - Item
+  - 
+  - 
   - 
   - 
   - 
@@ -52,6 +45,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Env
-    uniqueID: 1012319361
+  - name: BackGround
+    uniqueID: 858890975
+    locked: 0
+  - name: Ground
+    uniqueID: 980437571
+    locked: 0
+  - name: Item
+    uniqueID: 3230774057
+    locked: 0
+  - name: Enemy
+    uniqueID: 1700447757
+    locked: 0
+  - name: Player
+    uniqueID: 2128464413
     locked: 0

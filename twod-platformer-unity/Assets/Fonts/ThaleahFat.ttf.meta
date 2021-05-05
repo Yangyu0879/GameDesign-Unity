@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b86687bc3a56eba498f51e1bac5592c1
+guid: 0ed0e26e2910bbf4f96d775e70c4877d
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,7 +8,6 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: ThaleahFat
   fontNames:
   - ThaleahFat
   fallbackFontReferences: []
