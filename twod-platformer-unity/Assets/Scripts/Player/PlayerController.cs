@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             isDashing = false;
             return;
         }
-        Dash();
+        //Dash();
         Jump();
         //Attack();
         CheckGrounded();

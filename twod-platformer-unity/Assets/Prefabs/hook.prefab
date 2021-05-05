@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744279764685370311}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41, y: 0.16, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -142,12 +142,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.026577264, y: 0.49999997}
   serializedVersion: 2
-  m_Radius: 2.3
+  m_Radius: 1.4202673
 --- !u!114 &-6906592949429250804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,15 +160,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06abc4cae0e6b6438d9eda899b26f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destiny: {x: 0, y: 0}
-  speed: 1
+  dest: {x: 0, y: 0}
+  speed: 0.5
   distance: 0.3
   nodePrefab: {fileID: 6768215254966922452, guid: 7050db65ef61e8049b6ec8319bec98d6,
     type: 3}
   player: {fileID: 0}
   lastNode: {fileID: 0}
+  damage: 1
   lr: {fileID: 0}
   Nodes: []
+  sparksEffect: {fileID: 3841229950713837355, guid: b93022144d4dea64e9fcd9527bc3f211,
+    type: 3}
+  hitEnemySparksEffect: {fileID: 3841229950713837355, guid: c16e6469103be7548bccd5d9b2ace564,
+    type: 3}
+  hookPushForce: 2000
+  hookPullForce: 2500
 --- !u!120 &-4705335131719910042
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -180,7 +187,7 @@ LineRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 1
+  m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
@@ -188,7 +195,8 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a6077076e5c54ed4a880b5398d9c1cdd, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -214,13 +222,13 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 1
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.004722595
-        value: 0.09375
+        time: 0
+        value: 0.42196476
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -263,7 +271,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    shadowBias: 0
+    shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0

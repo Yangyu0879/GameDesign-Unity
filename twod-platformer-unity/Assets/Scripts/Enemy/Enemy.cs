@@ -8,7 +8,11 @@ public abstract class Enemy : MonoBehaviour
     public int damage;
     //flash when damaged
     public float flashTime = 0.2f;
+
+    public float knockbackFromWep = 2500f;
+
     public int enemyScore;
+
 
     private SpriteRenderer rendr;
     private Color originalColor;
