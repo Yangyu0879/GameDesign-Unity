@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int hp_max = 20;
     public int hp;
     public float dieTime = 1.0f;
+    public GameObject deathMenuUI;
 
     private SpriteRenderer rendr;
     private Animator myAnim;
@@ -47,7 +48,10 @@ public class PlayerHealth : MonoBehaviour
 
     //death
     void PlayerDeath()
-    {
+    {        
+        myAnim.SetTrigger("Die");
         //Destroy(gameObject);
+        deathMenuUI.SetActive(true);
+        
     }
 }

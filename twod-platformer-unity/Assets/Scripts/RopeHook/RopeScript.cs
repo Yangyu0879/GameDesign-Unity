@@ -85,9 +85,11 @@ public class RopeScript : MonoBehaviour {
 	void RenderLine()
 	{
 
-		lr.SetVertexCount (vertexCount);
-	
-		int i;
+		//lr.SetVertexCount (vertexCount);
+        lr.positionCount = vertexCount;
+
+
+        int i;
 		for (i = 0; i < Nodes.Count; i++) {
 
 			lr.SetPosition (i, Nodes [i].transform.position);
