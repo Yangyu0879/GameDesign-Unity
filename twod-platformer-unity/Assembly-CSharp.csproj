@@ -53,23 +53,26 @@
     <UnityVersion>2020.3.4f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\UI\PlayerDeathMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\GameScene\PlayerDeathMenu.cs" />
     <Compile Include="Assets\Scripts\RopeHook\RopeScript.cs" />
     <Compile Include="Assets\Scripts\ShadowSprite.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerScript.cs" />
-    <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\GameScene\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBat.cs" />
-    <Compile Include="Assets\Scripts\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ShadowPool.cs" />
+    <Compile Include="Assets\Scripts\UI\GameScene\ScoreBoard.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\RopeHook\throwhook.cs" />
-    <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\GameScene\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\UI\ScoreBoard.cs" />
     <Compile Include="Assets\Scripts\Item\CoinItem.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\SelectLevelsMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\SettingsMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\ScoreBoardMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
