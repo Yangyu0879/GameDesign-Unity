@@ -15,7 +15,7 @@
 
 1.增加了场景
 + 主菜单场景MainMenu， 目前只有开始、选关和退出，之后计划在右上角做设置和分数按钮。
-+ 选关场景SelectLevels，等关卡界面做出来再完善。
+待完成：settings、scores、selectlevels
 
 2.增加了游戏中暂停按钮和暂停界面。
 
