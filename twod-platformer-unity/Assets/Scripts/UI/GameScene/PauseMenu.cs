@@ -7,11 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool isGamePause=false;
     public GameObject pauseMenuUI;
-    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        player= GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // Update is called once per frame
@@ -31,16 +30,12 @@ public class PauseMenu : MonoBehaviour
     }
     public void ResumeGame()
     {
-        //恢复钩子使用
-        player.GetComponent<throwhook>().enabled = true;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1.0f;
         isGamePause = false;
     }
     public void PauseGame()
     {
-        //禁用钩子
-        player.GetComponent<throwhook>().enabled = false;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0.0f;
         isGamePause = true;
