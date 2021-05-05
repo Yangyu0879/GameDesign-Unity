@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ungrappable
   - Ground
+  - Grappling Hook
   layers:
   - Default
   - TransparentFX
