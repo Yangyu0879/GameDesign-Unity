@@ -83,8 +83,8 @@
     <Compile Include="Assets\Scripts\UI\GameScene\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Item\CoinItem.cs" />
     <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
+    <Compile Include="Assets\Scripts\Item\CoinItem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DOTween\DOTween.XML" />
