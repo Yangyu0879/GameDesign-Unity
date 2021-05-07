@@ -57,8 +57,9 @@ public class RopeScript : MonoBehaviour {
 		transform.position = Vector2.MoveTowards (transform.position,dest,speed);
 
 		if ((Vector2)transform.position != dest) {
+			Vector3 vector3 = new Vector3(0.2f, 0.4f, 0f);
 
-			if (Vector2.Distance (player.transform.position, lastNode.transform.position) > distance) {
+			if (Vector2.Distance (player.transform.position-vector3, lastNode.transform.position) > distance) {
 				//
 
 				CreateNode ();
@@ -68,8 +69,9 @@ public class RopeScript : MonoBehaviour {
 		} else if (done == false) {
 
 			done = true;
+			Vector3 vector3 = new Vector3(0.2f, 0.4f, 0f);
 
-			while(Vector2.Distance (player.transform.position, lastNode.transform.position) > distance)
+			while (Vector2.Distance (player.transform.position - vector3, lastNode.transform.position) > distance)
 			{
 				CreateNode ();
 			}
@@ -97,15 +99,17 @@ public class RopeScript : MonoBehaviour {
 
 		}
 
-		lr.SetPosition (i, player.transform.position);
+		Vector3 vector3 = new Vector3(0.2f, 0.4f, 0f);
+		lr.SetPosition (i, player.transform.position- vector3);
 
 	}
 
 
 	void CreateNode()
 	{
+		Vector3 vector3 = new Vector3(0.2f, 0.4f, 0f);
 
-		Vector2 pos2Create = player.transform.position - lastNode.transform.position;
+		Vector2 pos2Create = player.transform.position- vector3 - lastNode.transform.position;
 		pos2Create.Normalize ();
 		pos2Create *= distance;
 		pos2Create += (Vector2)lastNode.transform.position;

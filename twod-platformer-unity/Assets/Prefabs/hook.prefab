@@ -162,7 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dest: {x: 0, y: 0}
   speed: 0.5
-  distance: 0.3
+  distance: 0.1
   nodePrefab: {fileID: 6768215254966922452, guid: 7050db65ef61e8049b6ec8319bec98d6,
     type: 3}
   player: {fileID: 0}
