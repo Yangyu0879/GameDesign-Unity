@@ -2303,7 +2303,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 320
+        y: 321
         width: 16
         height: 16
       alignment: 0
@@ -6565,7 +6565,7 @@ TextureImporter:
       name: jungle tileset_211
       rect:
         serializedVersion: 2
-        x: 192
+        x: 190
         y: 144
         width: 16
         height: 16
@@ -7112,7 +7112,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 128
+        y: 129
         width: 16
         height: 16
       alignment: 0
@@ -7637,7 +7637,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 112
+        y: 111
         width: 16
         height: 16
       alignment: 0
