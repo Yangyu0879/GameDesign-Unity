@@ -12,8 +12,8 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         //Play should be put at 1
-        //Build setting: 1-PlayScene
-        SceneManager.LoadScene(1);
+        //Build setting: 1-GameScene 2-Level1-2
+        SceneManager.LoadScene(2);
     }
     public void QuitGame()
     {

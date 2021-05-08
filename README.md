@@ -41,6 +41,14 @@
 
 2.添加了ScoreBoard.SaveScore()，如果有需要存储分数时请调用。
 
+3.关于UI屏幕大小：请将屏幕调整到16：9并且关闭Low Sync。
+
+4.删除了SampleScene，目前的场景有MainMenu（编号0），GameScene（编号1）和Level1-2（编号2）
+
+使用SceneManager.LoadScene(2);加载场景
+
+
+
 # 5.7 更新
 
 mjx:加入地图部分元素，如流水、地刺等，加入新场景 level1-2（未完成），加入冰原地图，加入 RuleTile
