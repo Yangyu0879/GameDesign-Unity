@@ -15,6 +15,26 @@
 5. 增加敌人种类
 6. 增加主角技能
 
++ ToDo List
+  + 人物
+    + 改善绳索的表现。
+    + 对人物Sprite的尺寸、动作、物理等进行调试以达到较好效果。
+    + 完善人物操作控制，如果有需要，加入一些按键。
+    + 完善人物与场景、敌人的接口：目前已完成：
+      + 玩家受伤Player/playerHealth.DamagePlayer(d)
+      + 玩家回血Player/playerHealth.RecoverPlayer(r)
+      + 玩家得分UI/GameScene/ScoreBoard.AddScore(s)
+      + 敌人受伤Enemy/Enemy.TakeDamage(d)，让所有敌人继承Enemy类
+    + 如果完成以上还有空余精力，可以试着加入更多元素：大招、魔法、宠物、更多道具、更多能力、更多属性等等。
+  + 敌人
+    + 加入更多敌人种类。放在文件夹Enemy下。
+    + 敌人与玩家、场景互动。
+    + To Be Filled
+  + 场景
+    + 完善场景Level 1到3。
+    + 加入更多场景元素，使可玩性更高或者视觉感受更好。放在文件夹Item下。
+    + To Be Filled
+
 # 5.7 更新
 
 mjx:加入地图部分元素，如流水、地刺等，加入新场景 level1-2（未完成），加入冰原地图，加入 RuleTile
