@@ -44,10 +44,14 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         isGamePause = false;
+        //save score
+        ScoreBoard.SaveScore();
         SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {
+        //save score
+        ScoreBoard.SaveScore();
         Application.Quit();
     }
 }
