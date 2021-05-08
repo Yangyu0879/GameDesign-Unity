@@ -32,6 +32,9 @@ public class MainMenu : MonoBehaviour
     public void ScoreBoard()
     {
         mainMenuUI.SetActive(false);
+        //reload scores
+        ScoreBoardMenu scoreMenu = FindObjectOfType<ScoreBoardMenu>();
+        scoreMenu.ReloadScoreList();
         scoresMenuUI.SetActive(true);
     }
 }

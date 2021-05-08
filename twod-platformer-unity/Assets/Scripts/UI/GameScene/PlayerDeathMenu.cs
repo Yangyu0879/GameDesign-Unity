@@ -19,16 +19,22 @@ public class PlayerDeathMenu : MonoBehaviour
 
     public void RestartGame()
     {
+        //save score
+        ScoreBoard.SaveScore();
         PlayerHealth playerHealth = FindObjectOfType<PlayerHealth>();
         playerHealth.PlayerRestart();
     }
     public void MainMenu()
     {
+        //save score
+        ScoreBoard.SaveScore();
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);
     }
     public void QuitGame()
     {
+        //save score
+        ScoreBoard.SaveScore();
         Application.Quit();
     }
 }
