@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Animator myAnim;
     private BoxCollider2D myFeet;
     private bool isGround;
+    private bool collideSpike;
     private bool canDoubleJump;
     public float forcetoAdd = 100;
     private Rigidbody2D rb;
@@ -60,14 +61,14 @@ public class PlayerController : MonoBehaviour
         //Dash();
         Jump();
         //Attack();
-        CheckGrounded();
+        CheckGround();
         SwitchAnimation();
         //Dash();
 
 
     }
 
-    void CheckGrounded()
+    void CheckGround()
     {
         isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
     }
@@ -102,7 +103,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if(isGround)
+            if(isGround||collideSpike)
             {
                 myAnim.SetBool("Jump", true);
                 Vector2 jumpVel = new Vector2(0.0f, jumpSpeed);
@@ -190,6 +191,22 @@ public class PlayerController : MonoBehaviour
         if (dashtimeleft <= 0)
         {
             isDashing = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Spike"))
+        {
+            collideSpike = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Spike"))
+        {
+            collideSpike = false;
         }
     }
 }

@@ -9,6 +9,8 @@ TagManager:
   - Ground
   - Grappling Hook
   - Background
+  - MoveGround
+  - Spike
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Player
   - Enemy
   - Item
-  - 
+  - Spike
   - 
   - 
   - 
@@ -60,4 +62,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2128464413
+    locked: 0
+  - name: Water
+    uniqueID: 4139948305
     locked: 0

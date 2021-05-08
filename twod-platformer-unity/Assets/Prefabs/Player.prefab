@@ -367,8 +367,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041027784, y: -0.32506084}
-  m_Size: {x: 0.7297611, y: 1.341629}
+  m_Offset: {x: 0.060627937, y: -0.32793856}
+  m_Size: {x: 0.77168846, y: 1.4164553}
   m_Direction: 0
 --- !u!61 &5766852396924371459
 BoxCollider2D:
@@ -483,8 +483,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp_max: 20
   hp: 20
+  blinksNum: 2
+  blinkTime: 0.1
   dieTime: 1
   deathMenuUI: {fileID: 0}
+  startPos: {fileID: 0}
 --- !u!1 &8946330963598269033
 GameObject:
   m_ObjectHideFlags: 0
