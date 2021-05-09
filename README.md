@@ -55,6 +55,15 @@
 
 2.优化场景
 
+# 5.9 更新 -cys
+
+
+
+![image-20210509204932191](C:\Users\YSChen\AppData\Roaming\Typora\typora-user-images\image-20210509204932191.png)
+
+1. 给绳索添加了1层，在**Edit -> Project Settings -> Physics**让它不与player发生碰撞，防止绳子的撞击让玩家漂移的现象，防止绳子乱飘的现象
+2. 设置收绳索时固定获得10的速度
+
 # 5.8 更新 -mjx
 
 1.Level1-2 完成 80%左右，**地刺部分需要负责人物的同学再对人物建立一个多边形碰撞来实现地刺持续伤害**
