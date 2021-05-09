@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int blinksNum = 2;
     public float blinkTime = 0.1f;
     public float dieTime = 1.0f;
+    public float hitBoxCDTime = 1.0f;
     public GameObject deathMenuUI;
     //restart
     private Transform restartPos;
@@ -16,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     private SpriteRenderer rendr;
     private Animator myAnim;
+    private PolygonCollider2D polygonCollider2D;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.healthCurrent = HealthBar.healthMax;
         rendr = GetComponent<SpriteRenderer>();
         myAnim = GetComponent<Animator>();
+        polygonCollider2D= GetComponent<PolygonCollider2D>();
     }
 
     // Update is called once per frame
@@ -41,12 +44,20 @@ public class PlayerHealth : MonoBehaviour
         if(hp <= 0)
         {
             myAnim.SetTrigger("Die");
-            deathMenuUI.SetActive(true);
+            
             Invoke("PlayerDeath", dieTime);
         }
         StartCoroutine(Blinks(blinksNum, blinkTime));
+        //无敌时间
+        polygonCollider2D.enabled = false;
+        StartCoroutine(SetPlayerHitBox());
     }
 
+    IEnumerator SetPlayerHitBox()
+    {
+        yield return new WaitForSeconds(hitBoxCDTime);
+        polygonCollider2D.enabled = true;
+    }
     IEnumerator Blinks(int numBlinks, float seconds)
     {
         for (int i = 0; i < 2 * numBlinks; i++)
@@ -66,6 +77,7 @@ public class PlayerHealth : MonoBehaviour
     //death
     void PlayerDeath()
     {
+        deathMenuUI.SetActive(true);
         //代替Destroy(gameObject);
         //死亡后禁用一些功能
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;

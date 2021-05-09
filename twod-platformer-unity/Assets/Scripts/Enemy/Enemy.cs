@@ -61,7 +61,7 @@ public abstract class Enemy : MonoBehaviour
     //Touch player and give damage
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D"
+        if (collision.GetType().ToString() == "UnityEngine.PolygonCollider2D"
            && collision.CompareTag("Player"))
         {
             if (playerHealth != null)
