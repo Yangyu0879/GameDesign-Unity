@@ -11,6 +11,10 @@ public class PlayerHealth : MonoBehaviour
     public float dieTime = 1.0f;
     public float hitBoxCDTime = 1.0f;
     public GameObject deathMenuUI;
+    //flag of if player dead
+    private bool isDead=false;
+    public bool IsDead { get => isDead; }
+
     //restart
     private Transform restartPos;
     public Transform startPos;
@@ -43,9 +47,13 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.healthCurrent = hp;
         if(hp <= 0)
         {
-            myAnim.SetTrigger("Die");
-            
-            Invoke("PlayerDeath", dieTime);
+            if(!isDead)
+            {
+                //set player live state
+                isDead = true;
+                myAnim.SetTrigger("Die");
+                Invoke("PlayerDeath", dieTime);
+            }            
         }
         StartCoroutine(Blinks(blinksNum, blinkTime));
         //ÎÞµÐÊ±¼ä
@@ -84,8 +92,6 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         GetComponent<throwhook>().enabled = false;
         GetComponent<Renderer>().enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
-
     }
 
     //restart
@@ -100,6 +106,7 @@ public class PlayerHealth : MonoBehaviour
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         GetComponent<throwhook>().enabled = true;
         GetComponent<Renderer>().enabled = true;
-        GetComponent<BoxCollider2D>().enabled = true;
+        //set player live state
+        isDead = false;
     }
 }

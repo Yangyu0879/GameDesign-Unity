@@ -59,7 +59,9 @@ public class throwhook : MonoBehaviour {
                 //if(!canJump) launchForce += 250f; // slightly higher boostforce when player is grounded
 
                 // gameObject.GetComponent<Rigidbody2D>().AddForce(gameObject.GetComponent<Rigidbody2D>().velocity * 400); // use this for super boost
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, launchForce)); // boost player upwards when rope is withdrawn
+                //gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, launchForce)); // boost player upwards when rope is withdrawn
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 10);//想不到其他办法了
+
                 gameObject.transform.Find("Trail").gameObject.SetActive(false);  // disable green trial
                 gameObject.transform.Find("launchTrail").gameObject.SetActive(true);  // enable boost trial
 

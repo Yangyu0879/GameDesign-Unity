@@ -517,7 +517,7 @@ MonoBehaviour:
   hp: 20
   blinksNum: 2
   blinkTime: 0.1
-  dieTime: 2.5
+  dieTime: 1.5
   hitBoxCDTime: 1
   deathMenuUI: {fileID: 0}
   startPos: {fileID: 0}

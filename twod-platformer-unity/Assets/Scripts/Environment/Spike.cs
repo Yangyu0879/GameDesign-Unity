@@ -25,7 +25,10 @@ public class Spike : MonoBehaviour
         {
             if (playerHealth != null)
             {
-                playerHealth.DamagePlayer(damage);
+                if(!playerHealth.IsDead)
+                {
+                    playerHealth.DamagePlayer(damage);
+                }               
             }
         }
     }

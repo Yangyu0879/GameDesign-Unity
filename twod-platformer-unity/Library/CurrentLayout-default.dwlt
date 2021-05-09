@@ -25,8 +25,12 @@ MonoBehaviour:
 =======
   m_Title: Game
   m_RootView: {fileID: 7}
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/main
   m_MinSize: {x: 875, y: 300}
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -63,7 +67,7 @@ MonoBehaviour:
   m_LastSelected: 1
 =======
     y: 316
-    width: 803.3333
+    width: 802
     height: 271
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -93,8 +97,9 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 200.66667
+    x: 201
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 947.2
     height: 731
@@ -104,12 +109,19 @@ MonoBehaviour:
   controlID: 76
 =======
     width: 803.3333
+=======
+    width: 802
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     height: 587
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 1304
 >>>>>>> refs/remotes/origin/main
+=======
+  controlID: 108
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,6 +140,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 312.8
     height: 367.2
   m_MinSize: {x: 232, y: 271}
@@ -138,6 +151,12 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
 >>>>>>> refs/remotes/origin/main
+=======
+    width: 201
+    height: 587
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -187,6 +206,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 367.2
     width: 312.8
@@ -196,8 +216,11 @@ MonoBehaviour:
   m_ActualView: {fileID: 17}
 =======
     x: 1004
+=======
+    x: 1003
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     y: 0
-    width: 276
+    width: 277
     height: 587
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -264,10 +287,10 @@ MonoBehaviour:
 =======
     width: 1280
     height: 587
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 1239
+  controlID: 81
 --- !u!114 &7
 >>>>>>> refs/remotes/origin/main
 MonoBehaviour:
@@ -366,6 +389,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1260
     height: 731
   m_MinSize: {x: 433, y: 492}
@@ -375,6 +399,9 @@ MonoBehaviour:
 --- !u!114 &13
 =======
     width: 803.3333
+=======
+    width: 802
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     height: 316
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -490,14 +517,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 947.2
     y: 73.6
     width: 310.8
     height: 346.2
 =======
     x: 200.66667
+=======
+    x: 201.33334
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     y: 388.6667
-    width: 801.3333
+    width: 800
     height: 250
 >>>>>>> refs/remotes/origin/main
   m_ViewDataDictionary: {fileID: 0}
@@ -515,25 +546,34 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Brush
 =======
     - Assets/Scripts/Enemy
 >>>>>>> refs/remotes/origin/main
+=======
+    - Assets/Scripts/Player
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/Brush
 =======
   - Assets/Scripts/Enemy
 >>>>>>> refs/remotes/origin/main
+=======
+  - Assets/Scripts/Player
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projects\github repo\GameDesign-Unity\twod-platformer-unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0e490000
@@ -548,6 +588,12 @@ MonoBehaviour:
     m_SelectedIDs: f66d0000
     m_LastClickedID: 28150
     m_ExpandedIDs: 00000000c26d0000c46d0000c66d0000c86d0000ca6d0000cc6d0000ce6d0000d06d0000d26d0000d46d0000d66d0000d86d0000da6d0000026e0000206e00007c6e000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 106}
+    m_SelectedIDs: 066e0000
+    m_LastClickedID: 28166
+    m_ExpandedIDs: 00000000c26d0000c46d0000c66d0000c86d0000ca6d0000cc6d0000ce6d0000d06d0000d26d0000d46d0000d66d0000d86d0000da6d000000ca9a3b
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,14 +708,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1260
     y: 73.6
     width: 275
     height: 710
 =======
     x: 1004
+=======
+    x: 1003.3334
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     y: 72.66667
-    width: 275
+    width: 276
     height: 566
 >>>>>>> refs/remotes/origin/main
   m_ViewDataDictionary: {fileID: 0}
@@ -680,7 +730,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 900
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -714,7 +764,7 @@ MonoBehaviour:
 =======
     x: 0
     y: 72.66667
-    width: 199.66667
+    width: 200
     height: 566
 >>>>>>> refs/remotes/origin/main
   m_ViewDataDictionary: {fileID: 0}
@@ -728,8 +778,12 @@ MonoBehaviour:
 =======
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 1adbffffc4e1ffff
 >>>>>>> refs/remotes/origin/main
+=======
+      m_ExpandedIDs: c4e1ffff
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -775,14 +829,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 73.6
     width: 946.2
     height: 308.6
 =======
     x: 200.66667
+=======
+    x: 201.33334
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     y: 72.66667
-    width: 801.3333
+    width: 800
     height: 295
 >>>>>>> refs/remotes/origin/main
   m_ViewDataDictionary: {fileID: 0}
@@ -798,6 +856,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -9.946955, y: -15.995148, z: -102.49706}
     speed: 2
     m_Value: {x: -9.946955, y: -15.995148, z: -102.49706}
@@ -806,6 +865,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -17.473043, y: -14.317435, z: -1.8565377}
 >>>>>>> refs/remotes/origin/main
+=======
+    m_Target: {x: -18.048315, y: -14.185792, z: -1.9005259}
+    speed: 2
+    m_Value: {x: -18.048315, y: -14.185792, z: -1.9005259}
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -857,6 +921,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10.498788
     speed: 2
     m_Value: 10.498788
@@ -865,6 +930,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 9.775158
 >>>>>>> refs/remotes/origin/main
+=======
+    m_Target: 10.21504
+    speed: 2
+    m_Value: 10.21504
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -911,14 +981,18 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 0
     y: 403.2
     width: 946.2
     height: 380.4
 =======
     x: 200.66667
+=======
+    x: 201.33334
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     y: 72.66667
-    width: 801.3333
+    width: 800
     height: 295
 >>>>>>> refs/remotes/origin/main
   m_ViewDataDictionary: {fileID: 0}
@@ -976,6 +1050,7 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 946.2
       height: 359.4
     m_Scale: {x: 1, y: 1}
@@ -986,12 +1061,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 400.66666, y: 137}
 >>>>>>> refs/remotes/origin/main
+=======
+      width: 800
+      height: 274
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 400, y: 137}
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -473.1
       y: -179.7
@@ -1002,13 +1084,20 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 1182.75, y: 475.5}
 =======
       x: -400.66666
+=======
+      x: -400
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
       y: -137
-      width: 801.3333
+      width: 800
       height: 274
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1202, y: 442.5}
 >>>>>>> refs/remotes/origin/main
+=======
+  m_LastWindowPixelSize: {x: 1200, y: 442.5}
+>>>>>>> c1ee1636c891f75c93752312b53c4f3f3afa67ed
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
