@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558188653006060
-    m_Hash: 1691527057
+      ticks: 637561394954067364
+    m_Hash: 313831694
   m_LockFileStatus:
     m_FilePath: E:/MJX(E)/Github/GameDesign-Unity/twod-platformer-unity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558188654387694
-    m_Hash: 3425246507
+      ticks: 637561394954067364
+    m_Hash: 3243616239
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
