@@ -20,9 +20,13 @@ public class Spike : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
+        if (collision.CompareTag("Player") 
+            && collision.GetType().ToString() == "UnityEngine.PolygonCollider2D")
         {
-            playerHealth.DamagePlayer(damage); 
+            if (playerHealth != null)
+            {
+                playerHealth.DamagePlayer(damage);
+            }
         }
     }
 }
