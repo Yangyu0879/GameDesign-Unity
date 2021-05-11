@@ -16,6 +16,7 @@
 6. 增加主角技能
 
 - ToDo List
+
   - 人物
     - 改善绳索的表现。
     - 对人物 Sprite 的尺寸、动作、物理等进行调试以达到较好效果。
@@ -31,17 +32,27 @@
     - 敌人与玩家、场景互动。
     - To Be Filled
   - 场景
+
     - 完善场景 Level 1 到 3。
     - 加入更多场景元素，使可玩性更高或者视觉感受更好。放在文件夹 Item 下。
     - To Be Filled
 
-<<<<<<< Updated upstream
+# 5.11 更新 -mjx
+
+1. 加入宝箱(H)与传送门(B)
+
+2. 修改金币 prefab 为有重力型(Coin prefab)和无重力型(NoGravityCoin prefab)
+
+3. 加入 TriggerBox 层，该层只与 Player 碰撞，用以触发人物碰撞，具体在 ProjectSetting 中 Physics2D 查看
+
+4.修改 gitignore
+
 # 5.9 更新 -hyo
 
-1.为玩家加入IsDead字段，外部只能获取不能修改。
+1.为玩家加入 IsDead 字段，外部只能获取不能修改。
 
 2.调整了死亡动画播放时间。
-=======
+
 # 5.9 更新 -mjx
 
 1.加入金币 Brush
@@ -51,7 +62,6 @@
 3.加入多个其他模板素材，具体可在 OthersMaterial 文件夹下查看，按需使用，最好别删（部分我用到，没有单独拖出来）
 
 4.加入熔岩、指示牌、鬼火灯等 tile
->>>>>>> Stashed changes
 
 # 5.9 更新 -hyo
 
@@ -72,12 +82,10 @@
 
 # 5.9 更新 -cys
 
-
-
 ![image-20210509204932191](C:\Users\YSChen\AppData\Roaming\Typora\typora-user-images\image-20210509204932191.png)
 
-1. 给绳索添加了1层，在**Edit -> Project Settings -> Physics**让它不与player发生碰撞，防止绳子的撞击让玩家漂移的现象，防止绳子乱飘的现象
-2. 设置收绳索时固定获得10的速度
+1. 给绳索添加了 1 层，在**Edit -> Project Settings -> Physics**让它不与 player 发生碰撞，防止绳子的撞击让玩家漂移的现象，防止绳子乱飘的现象
+2. 设置收绳索时固定获得 10 的速度
 
 # 5.8 更新 -mjx
 

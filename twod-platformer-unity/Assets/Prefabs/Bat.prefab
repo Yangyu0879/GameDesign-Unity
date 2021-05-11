@@ -176,6 +176,7 @@ MonoBehaviour:
   hp: 3
   damage: 1
   flashTime: 0.2
+  knockbackFromWep: 2500
   enemyScore: 1
   speed: 2
   startWaitTime: 1

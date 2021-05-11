@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{44AADC75-4A24-973F-FD28-475F06CE0477}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -86,6 +87,7 @@
     <Compile Include="Assets\Scripts\Environment\MovePlatform.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\ScoreBoardMenu.cs" />
+    <Compile Include="Assets\Scripts\Item\TransDoor.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBat.cs" />
     <Compile Include="Assets\Scripts\ShadowPool.cs" />
     <Compile Include="Assets\Scripts\UI\GameScene\ScoreBoard.cs" />
@@ -96,14 +98,15 @@
     <Compile Include="Assets\Tilemap\Tiles\Animated Tile\Scripts\AnimatedTile.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
+    <Compile Include="Assets\Scripts\Item\TreasureBox.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\DOTween\DOTween.XML" />
-     <None Include="Assets\Scripts\Player\RippleEffect\RippleEffect.shader" />
-     <None Include="Assets\OthersMaterial\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
-     <None Include="Assets\DOTween\DOTween.dll" />
-     <None Include="Assets\DOTween\readme.txt" />
-     <None Include="Assets\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
+    <None Include="Assets\DOTween\DOTween.XML" />
+    <None Include="Assets\Scripts\Player\RippleEffect\RippleEffect.shader" />
+    <None Include="Assets\OthersMaterial\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
+    <None Include="Assets\DOTween\DOTween.dll" />
+    <None Include="Assets\DOTween\readme.txt" />
+    <None Include="Assets\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files\Unity\2020.3.4f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

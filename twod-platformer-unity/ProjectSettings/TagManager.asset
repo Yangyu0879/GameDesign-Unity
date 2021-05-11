@@ -25,11 +25,11 @@ TagManager:
   - Enemy
   - Item
   - Spike
+  - CoinNoGravity
   - 
   - 
   - 
-  - 
-  - 
+  - TriggerBox
   - 
   - 
   - 
