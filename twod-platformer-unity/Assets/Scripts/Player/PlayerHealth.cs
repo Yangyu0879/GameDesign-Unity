@@ -82,6 +82,12 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.healthCurrent = hp;
     }
 
+    public void RecoverPlayerAll()
+    {
+        hp = hp_max;
+        HealthBar.healthCurrent = hp;
+    }
+
     //death
     void PlayerDeath()
     {
@@ -108,5 +114,10 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<Renderer>().enabled = true;
         //set player live state
         isDead = false;
+    }
+
+    public void setCheckpoint(Transform now)
+    {
+        restartPos = now;
     }
 }
