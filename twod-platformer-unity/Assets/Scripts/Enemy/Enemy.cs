@@ -8,7 +8,8 @@ public abstract class Enemy : MonoBehaviour
     public int damage;
     //flash when damaged
     public float flashTime = 0.2f;
-
+    //受伤粒子特效
+    public GameObject hitSparkEffect;
     public float knockbackFromWep = 2500f;
 
     public int enemyScore;
@@ -43,6 +44,7 @@ public abstract class Enemy : MonoBehaviour
     {
         hp -= damageTaken;
         FlashColor();
+        Instantiate(hitSparkEffect, transform.position, Quaternion.identity);
     }
 
     //flash

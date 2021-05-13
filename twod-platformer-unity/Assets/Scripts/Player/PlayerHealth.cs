@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public float dieTime = 1.0f;
     public float hitBoxCDTime = 1.0f;
     public GameObject deathMenuUI;
+    //受伤粒子特效
+    public GameObject hitSparkEffect;
     //flag of if player dead
     private bool isDead=false;
     public bool IsDead { get => isDead; }
@@ -61,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
         }
         //玩家受伤表示
         StartCoroutine(Blinks(blinksNum, blinkTime));
+        Instantiate(hitSparkEffect, transform.position, Quaternion.identity);
         //屏幕受伤表示
         screenFlash.FlashScreen();
         playerHitImpulse.GenerateImpulse(transform.position);

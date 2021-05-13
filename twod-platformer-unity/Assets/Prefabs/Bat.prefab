@@ -58,8 +58,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6556064647187419200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2303066, y: -0.55609894, z: 24.624409}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.1287, y: -0.5052, z: 24.624409}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 6556064647995852240}
   m_RootOrder: 0
@@ -148,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028544188, y: -0.03262204}
+  m_Offset: {x: 0.019606113, y: -0.010277748}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -159,7 +159,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.54015875, y: 0.40151525}
+  m_Size: {x: 0.6295366, y: 0.4640789}
   m_EdgeRadius: 0
 --- !u!114 &6556064647187419212
 MonoBehaviour:
@@ -176,6 +176,8 @@ MonoBehaviour:
   hp: 3
   damage: 1
   flashTime: 0.2
+  hitSparkEffect: {fileID: 3841229950713837355, guid: c16e6469103be7548bccd5d9b2ace564,
+    type: 3}
   knockbackFromWep: 2500
   enemyScore: 1
   speed: 2

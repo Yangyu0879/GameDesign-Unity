@@ -522,6 +522,8 @@ MonoBehaviour:
   dieTime: 1.5
   hitBoxCDTime: 1
   deathMenuUI: {fileID: 0}
+  hitSparkEffect: {fileID: 3252618812389111724, guid: 5e2e15854ef1cdc4c8f9cce058237cad,
+    type: 3}
   startPos: {fileID: 0}
 --- !u!114 &6838298143542541919
 MonoBehaviour:
