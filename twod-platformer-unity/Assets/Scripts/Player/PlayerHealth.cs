@@ -22,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer rendr;
     private Animator myAnim;
     private PolygonCollider2D polygonCollider2D;
+    private ScreenFlash screenFlash;
+    private Cinemachine.CinemachineCollisionImpulseSource playerHitImpulse;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,21 +34,23 @@ public class PlayerHealth : MonoBehaviour
         rendr = GetComponent<SpriteRenderer>();
         myAnim = GetComponent<Animator>();
         polygonCollider2D= GetComponent<PolygonCollider2D>();
+        screenFlash = GetComponent<ScreenFlash>();
+        playerHitImpulse = GetComponent<Cinemachine.CinemachineCollisionImpulseSource>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void DamagePlayer(int damage)
     {
-        
         hp = Mathf.Max(0, hp - damage);
         HealthBar.healthCurrent = hp;
         if(hp <= 0)
         {
+            //死亡逻辑
             if(!isDead)
             {
                 //set player live state
@@ -55,10 +59,15 @@ public class PlayerHealth : MonoBehaviour
                 Invoke("PlayerDeath", dieTime);
             }            
         }
+        //玩家受伤表示
         StartCoroutine(Blinks(blinksNum, blinkTime));
+        //屏幕受伤表示
+        screenFlash.FlashScreen();
+        playerHitImpulse.GenerateImpulse(transform.position);
         //无敌时间
         polygonCollider2D.enabled = false;
         StartCoroutine(SetPlayerHitBox());
+        
     }
 
     IEnumerator SetPlayerHitBox()

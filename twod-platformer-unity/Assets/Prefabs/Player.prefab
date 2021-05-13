@@ -239,6 +239,8 @@ GameObject:
   - component: {fileID: 2340493297866268119}
   - component: {fileID: 8325626824137468573}
   - component: {fileID: 3565963511770269174}
+  - component: {fileID: 6838298143542541919}
+  - component: {fileID: 7430745621019330396}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -521,6 +523,70 @@ MonoBehaviour:
   hitBoxCDTime: 1
   deathMenuUI: {fileID: 0}
   startPos: {fileID: 0}
+--- !u!114 &6838298143542541919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5745770107135034120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4ac18e140c8cf848b5c39506d01d8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenFlashImg: {fileID: 0}
+  screenFlashTime: 0.25
+  flashColor: {r: 0.990566, g: 0.990566, b: 0.990566, a: 0.24705882}
+--- !u!114 &7430745621019330396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5745770107135034120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_RawSignal: {fileID: 11400000, guid: a9a3ad1d7eb58f44d8494268d9b45264, type: 2}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0.5
+      m_SustainTime: 0.05
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 1000
+    m_PropagationSpeed: 343
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_IgnoreTag: 
+  m_UseImpactDirection: 0
+  m_ScaleImpactWithMass: 0
+  m_ScaleImpactWithSpeed: 0
 --- !u!1 &8946330963598269033
 GameObject:
   m_ObjectHideFlags: 0
