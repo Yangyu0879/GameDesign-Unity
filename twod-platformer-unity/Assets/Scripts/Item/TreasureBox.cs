@@ -5,6 +5,7 @@ using UnityEngine;
 public class TreasureBox : MonoBehaviour
 {
     public GameObject coin;
+    public GameObject KeySprite;
     public float delayTime;
     public int coinCnt;
     public float coinUpSpeed;
@@ -16,6 +17,7 @@ public class TreasureBox : MonoBehaviour
     void Start()
     {
         myAnim = GetComponent<Animator>();
+        KeySprite.SetActive(false);
         isOpened = false;
     }
 
@@ -54,6 +56,10 @@ public class TreasureBox : MonoBehaviour
         if(collision.gameObject.CompareTag("Player") && collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             canOpen = true;
+            if(!isOpened)
+            {
+                KeySprite.SetActive(true);
+            }
         }
     }
 
@@ -62,6 +68,7 @@ public class TreasureBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             canOpen = false;
+            KeySprite.SetActive(false);
         }
     }
 }

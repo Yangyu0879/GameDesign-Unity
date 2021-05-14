@@ -5,13 +5,15 @@ using UnityEngine;
 public class TransDoor : MonoBehaviour
 {
     public Transform transDoor;
+    public GameObject KeySprite;
     private Transform playerTrnas;
     private bool isDoor;
     
     // Start is called before the first frame update
     void Start()
     {
-        playerTrnas = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
+        playerTrnas = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        KeySprite.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class TransDoor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             isDoor = true;
-            Debug.Log(isDoor);
+            KeySprite.SetActive(true);
         }
     }
 
@@ -45,7 +47,7 @@ public class TransDoor : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && collision.GetType().ToString() == "UnityEngine.CapsuleCollider2D")
         {
             isDoor = false;
-            Debug.Log(isDoor);
+            KeySprite.SetActive(false);
         }
     }
 }
