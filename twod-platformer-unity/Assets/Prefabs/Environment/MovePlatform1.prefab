@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9033704372413219694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,9 +39,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 814608876975342221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MovePlatform1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2781200948078785373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
