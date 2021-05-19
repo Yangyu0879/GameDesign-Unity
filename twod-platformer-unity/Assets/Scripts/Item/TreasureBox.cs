@@ -27,7 +27,7 @@ public class TreasureBox : MonoBehaviour
         for (int i = 0; i < coinCnt; ++i)
         {
             GameObject nowcoin = Instantiate(coin, transform.position, Quaternion.identity);
-            Vector2 randomDir = new Vector2(Random.Range(-0.5f, 0.5f), 1.0f);
+            Vector2 randomDir = new Vector2(Random.Range(-0.3f, 0.3f), 1.0f);
             nowcoin.GetComponent<Rigidbody2D>().velocity = randomDir * coinUpSpeed;
             yield return wait;
         }

@@ -311,5 +311,5 @@ MonoBehaviour:
   KeySprite: {fileID: 1494355219647931640}
   delayTime: 0.5
   coinCnt: 20
-  coinUpSpeed: 10
+  coinUpSpeed: 8
   intervalTime: 0.1
