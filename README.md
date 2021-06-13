@@ -39,6 +39,10 @@
     
     - To Be Filled
 
+# 6.13 更新 -yy
+
+添加HideSpike
+
 # 6.13 更新 -cys
 
 枪和子弹 按鼠标中键发射 在scene1-2中可打小蝙蝠掉血
