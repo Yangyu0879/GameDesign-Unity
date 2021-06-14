@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
 
         if (isDoor)
         {
-            SceneController.Instance.LoadScene(target);
+            SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
     }
 
