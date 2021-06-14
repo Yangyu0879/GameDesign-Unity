@@ -22,10 +22,6 @@ public class EnemyBigSlime : PlatformEnemy
         slime.tag = "Enemy";
         slime.GetComponent<PlatformEnemy>().rightBorderPos = rightBorderPos;
         slime.GetComponent<PlatformEnemy>().leftBorderPos = leftBorderPos;
-
-        tilemap = GameObject.FindGameObjectWithTag("Grid").GetComponent<Tilemap>();
-        UnityEngine.Debug.Log("Tilemap:Used Tile Count:" + tilemap.GetUsedTilesCount().ToString());
-        UnityEngine.Debug.Log("Tilemap:Size:" + tilemap.size.ToString());
     }
 
     // Update is called once per frame
