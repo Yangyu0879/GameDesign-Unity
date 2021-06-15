@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class Door : MonoBehaviour
 {
 
@@ -27,7 +28,17 @@ public class Door : MonoBehaviour
 
         if (isDoor)
         {
-            SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            if (SceneManager.GetActiveScene().buildIndex % 2 == 0)
+            {
+                int i = Random.Range(2, 4);
+                Debug.Log(i);
+                SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + i);
+            }
+            else 
+            {
+                int i = Random.Range(1, 3);
+                SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + i);
+            }
         }
     }
 
