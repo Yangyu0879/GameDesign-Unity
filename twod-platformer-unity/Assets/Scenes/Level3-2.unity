@@ -85309,6 +85309,18 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!114 &479625285 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5704835897585249181, guid: e54b9e9c994b896449fb8fae8f99fe97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1136558016}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &506616802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88528,7 +88540,7 @@ PrefabInstance:
         type: 3}
       propertyPath: screenFlashImg
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 479625285}
     - target: {fileID: 7430745621019330396, guid: 2e7fbf2ec62ff494b95799277e39c41e,
         type: 3}
       propertyPath: m_ImpulseDefinition.m_TimeEnvelope.m_AttackShape.m_Curve.Array.size
@@ -97852,7 +97864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897408930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.10000014, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1135597402}
