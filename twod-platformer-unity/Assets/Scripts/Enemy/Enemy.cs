@@ -1,40 +1,41 @@
-锘縰sing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public int hp;
+    public int health;
     public int damage;
+
     //flash when damaged
     public float flashTime = 0.2f;
-    //鍙椾激绮掑瓙鐗规晥
+    //受伤粒子特效
     public GameObject hitSparkEffect;
     public float knockbackFromWep = 2500f;
 
     public int enemyScore;
-
 
     private SpriteRenderer rendr;
     private Color originalColor;
     private PlayerHealth playerHealth;
 
     // Start is called before the first frame update
-    protected void Start()
+    public void Start()
     {
+        health = 4;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         rendr = GetComponent<SpriteRenderer>();
         originalColor = rendr.color;
-        //init
     }
 
     // Update is called once per frame
-    protected void Update()
+    public void Update()
     {
-        //CheckDeath
-        if (hp <= 0)
-        {
-            ScoreBoard.AddScore(enemyScore);
+        DetectAndDestroy();
+    }
+
+    protected virtual void DetectAndDestroy(){
+        if(health <= 0){
             Destroy(gameObject);
         }
     }
@@ -42,7 +43,7 @@ public abstract class Enemy : MonoBehaviour
     //be damaged
     public void TakeDamage(int damageTaken)
     {
-        hp -= damageTaken;
+        health -= damageTaken;
         FlashColor();
         Instantiate(hitSparkEffect, transform.position, Quaternion.identity);
     }
@@ -61,7 +62,7 @@ public abstract class Enemy : MonoBehaviour
     }
 
     //Touch player and give damage
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetType().ToString() == "UnityEngine.PolygonCollider2D"
            && collision.CompareTag("Player"))

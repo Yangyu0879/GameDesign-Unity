@@ -11,6 +11,7 @@ TagManager:
   - Background
   - MoveGround
   - Spike
+  - Grid
   layers:
   - Default
   - TransparentFX
