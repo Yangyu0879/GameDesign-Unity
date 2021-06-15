@@ -12,7 +12,6 @@ TagManager:
   - MoveGround
   - Spike
   - Grid
-  - PlayerAttack
   layers:
   - Default
   - TransparentFX
