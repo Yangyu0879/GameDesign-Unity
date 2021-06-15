@@ -7,11 +7,16 @@ public class Door : MonoBehaviour
 {
 
     public GameObject KeySprite;
+    public GameObject GameSuccess;
     private bool isDoor;
 
     void Start()
     {
         KeySprite.SetActive(false);
+        if (SceneManager.GetActiveScene().buildIndex == 6 || SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            GameSuccess.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -38,6 +43,10 @@ public class Door : MonoBehaviour
             {
                 int i = Random.Range(1, 3);
                 SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + i);
+            }
+            if(SceneManager.GetActiveScene().buildIndex==6|| SceneManager.GetActiveScene().buildIndex == 7)
+            {
+                GameSuccess.SetActive(true);
             }
         }
     }
