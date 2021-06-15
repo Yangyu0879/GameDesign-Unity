@@ -369,10 +369,10 @@ Transform:
   - {fileID: 1023783424}
   - {fileID: 466181848}
   - {fileID: 234806894}
-  - {fileID: 453061799}
   - {fileID: 559182976}
-  - {fileID: 866302905}
+  - {fileID: 453061799}
   - {fileID: 848764496}
+  - {fileID: 866302905}
   - {fileID: 1117905553}
   - {fileID: 1849746552}
   - {fileID: 314221814}
@@ -86122,7 +86122,7 @@ PrefabInstance:
         type: 3}
       propertyPath: deathMenuUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1136558017}
     - target: {fileID: 3794754054852709989, guid: 2e7fbf2ec62ff494b95799277e39c41e,
         type: 3}
       propertyPath: m_SortingLayer
@@ -89619,6 +89619,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e54b9e9c994b896449fb8fae8f99fe97, type: 3}
+--- !u!1 &1136558017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5704835896375298470, guid: e54b9e9c994b896449fb8fae8f99fe97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1136558016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1141571565
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -110,6 +110,7 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         GetComponent<throwhook>().enabled = false;
         GetComponent<Renderer>().enabled = false;
+        GetComponent<PlayerController>().enabled = false;
     }
 
     //restart
@@ -124,6 +125,7 @@ public class PlayerHealth : MonoBehaviour
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         GetComponent<throwhook>().enabled = true;
         GetComponent<Renderer>().enabled = true;
+        GetComponent<PlayerController>().enabled = true;
         //set player live state
         isDead = false;
     }
