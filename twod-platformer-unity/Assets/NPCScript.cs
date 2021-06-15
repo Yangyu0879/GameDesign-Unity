@@ -7,6 +7,7 @@ public class NPCScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject dialogImage;
+    public GameObject KeySprite;
     public Text dialogText;
     public GameObject[] options;
 
@@ -115,6 +116,7 @@ public class NPCScript : MonoBehaviour
             isInRange = true;
             optionActive = false;
             inOptionText = -1;
+            KeySprite.SetActive(true);
         }
     }
 
@@ -136,6 +138,7 @@ public class NPCScript : MonoBehaviour
             {
                 option.SetActive(false);
             }
+            KeySprite.SetActive(false);
         }
     }
 }
