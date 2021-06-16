@@ -12,7 +12,7 @@ public class EnemySlime : Enemy
     protected enum EnemyState
     {
         STAND,      //原地呼吸
-        CHECK,       //原地观察
+        CHECK,      //原地观察
         WALK,       //移动
         WARN,       //盯着玩家
         CHASE,      //追击玩家
