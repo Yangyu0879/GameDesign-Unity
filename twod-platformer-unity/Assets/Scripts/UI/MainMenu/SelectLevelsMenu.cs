@@ -9,15 +9,18 @@ public class SelectLevelsMenu : MonoBehaviour
     public GameObject levelsMenuUI;
     public void GoToLevel1()
     {
-        SceneManager.LoadScene("Level1-2");
+        int i = Random.Range(1, 3);
+        SceneManager.LoadScene("Level1-"+i.ToString());
     }
     public void GoToLevel2()
     {
-        SceneManager.LoadScene("Level2-1");
+        int i = Random.Range(1, 3);
+        SceneManager.LoadScene("Level2-" + i.ToString());
     }
     public void GoToLevel3()
     {
-        SceneManager.LoadScene("Level3-1");
+        int i = Random.Range(1, 3);
+        SceneManager.LoadScene("Level3-"+i.ToString());
     }
     public void ReturnToMainMenu()
     {
