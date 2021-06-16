@@ -37,6 +37,7 @@ public class Door : MonoBehaviour
             {
                 int i = Random.Range(2, 4);
                 Debug.Log(i);
+                //i = 2;
                 SceneController.Instance.LoadScene(SceneManager.GetActiveScene().buildIndex + i);
             }
             else 
