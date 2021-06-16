@@ -187,7 +187,7 @@ MonoBehaviour:
   hitSparkEffect: {fileID: 3841229950713837355, guid: c16e6469103be7548bccd5d9b2ace564,
     type: 3}
   knockbackFromWep: 2500
-  enemyScore: 0
+  enemyScore: 100
   speed: 1
   detectRadius: 2
   leftBorderPos: {fileID: 0}
